@@ -32,7 +32,7 @@
   gtag('config', 'G-SRLG3Y0TBJ');
 </script>
 
-    
+
     @php
         $currentDate = now()->format('Y-m-d');
         $canonicalUrl = url()->current();
@@ -130,7 +130,7 @@
         @endif
         <div id="section3" class="sectionMob3">
             @if(isset($codeData) && count($codeData) > 0)
-                <h1>State-Wise Vehicle Registration Details</h1>
+                <h1>State-Wise Vehicle Registration Details new india</h1>
                 <div class="stateClick">
                     @foreach ($codeData as $row)
                         <button class="{{ isset($data) && count($data) > 0 ? 'min-wth' : 'min-wth-800' }}">
@@ -196,12 +196,12 @@
                         <p class=rtoDetails>The address of {{ $row->city }} Regional Transport Office in {{ $row->state }} which is indicated by registration plate {{ $rtoNo }} is here. You can contact the {{ $row->city }} RTO through the Phone Number or Email ID provided below.If you wish to extend your search query and find details of any other vehicle’s registration, enter the registration number of the vehicle in the search box. The RTO database at Thiyagipedia includes the details of each and every Regional Transport Office spread across the 29 states and 7 union territories in India.</p>
                     </li>
                 </ul>
-                
+
             </div>
         @endif
         <div id="section3" class="section3">
             @if(isset($codeData) && count($codeData) > 0)
-                <h1>State-Wise Vehicle Registration Details</h1>
+                <h1>State-Wise Vehicle Registration Details new india</h1>
                 <div class="stateClick">
                     @foreach ($codeData as $row)
                         <button>
