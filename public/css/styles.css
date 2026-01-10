@@ -1,0 +1,503 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	box-sizing: border-box;
+	background: #F3F3F3;
+    
+
+	.static-header {
+        padding: 20px;
+        position: fixed;
+		box-sizing: border-box;
+        background-color: #382633;
+		text-align: center;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+		img {
+			margin: 0 auto;
+		}
+
+		nav {
+			padding: 20px 0 0;
+			max-width: 400px;
+			margin: 0 auto;
+
+			a {
+				display: inline-block;
+				color: #666666;
+				text-decoration: none;
+				font-size: 14px;
+				cursor: pointer;
+				
+				&:not(:last-of-type) {
+					padding-right: 30px;
+				}
+
+				&:hover {
+					color: #333333;
+				}
+			}
+		}
+	}
+	
+    .static-footer {
+		overflow: hidden;
+        padding: 10px;
+        position: fixed;
+		box-sizing: border-box;
+        background-color: #382633;
+		text-align: center;
+        width: 100%;
+        bottom: 0;
+        z-index: 1000;
+
+		img {
+			margin: 0 auto;
+		}
+
+		nav {
+			padding: 20px 0 0;
+			max-width: 400px;
+			margin: 0 auto;
+
+			a {
+				display: inline-block;
+				color: #666666;
+				text-decoration: none;
+				font-size: 14px;
+				cursor: pointer;
+				
+				&:not(:last-of-type) {
+					padding-right: 30px;
+				}
+
+				&:hover {
+					color: #333333;
+				}
+			}
+		}
+	}
+
+	.fixed-header {
+		display: none;
+		position: fixed;
+		top: 0;
+		background: #FFFFFF;
+		margin: 0 -15px;
+		width: 100%;
+		border-bottom: 1px solid #CCCCCC;
+		box-sizing: border-box;
+		box-shadow: 0px 0px 10px 0 rgba(#000000, 0.5);
+		opacity: 0.9;
+		z-index: 100;
+		
+		.fheader__container {
+			max-width: 900px;
+			padding: 15px 30px;
+			margin: 0 auto;
+			overflow: hidden;
+			box-sizing: border-box;
+		
+			img {
+				float: left;
+				height: 30px;
+				width: auto;
+			}
+
+			nav {
+				padding: 5px 0;
+				max-width: 400px;
+				float: right;
+				text-align: right;
+
+				a {
+					display: inline-block;
+					color: #666666;
+					text-decoration: none;
+					font-size: 14px;
+					cursor: pointer;
+
+					&:not(:last-of-type) {
+						padding-right: 15px;
+					}
+
+					&:hover {
+						color: #333333;
+					}
+				}
+			}
+		}
+	}
+
+	.container__content {
+		margin: 0 auto;
+		background: rgba(255, 255, 255, 0.8);
+		box-sizing: border-box;
+		min-height: 1000px;
+		overflow: hidden;
+		clear: both;
+
+		> div {
+			display: block;
+			overflow: hidden;
+			
+			h1 {
+				text-align: center;
+				line-height: 500px;
+				color: #666666;
+				margin: 0;
+			}
+			
+			&.section1 {
+				background: #ffd6cd;
+			}
+			
+			&.section2 {
+				background: #ddebfd;
+			}
+			
+			&.section3 {
+				background: #ffd6cd;
+			}
+			
+			&.section4 {
+				background: #ddebfd;
+			}
+		}
+	}
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000; /* Adjust the z-index as needed */
+    }
+
+    .logo img {
+        max-width: 100px; /* Adjust the max-width of the logo as needed */
+    }
+}
+
+.section1 img {
+    max-height: 80%;
+    height: 80%;
+    width: 100%;
+}
+
+.logoImg {
+	width: 50px;
+	height: 50px;
+}
+
+.vechicalBox {
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    right: 10%;
+    background-color: #3e2133cf;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vehicalContent {
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    left: 10%;
+	color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vehicalContent h1 {
+	font-size: 50px;
+	text-align: left;
+}
+
+.vechicalBox h2 {
+	color: wheat;
+    font-size: 35px;
+}
+
+.vechicalBox input {
+    padding: 20px;
+	width: 80%;
+	font-size: 25px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.vechicalBox button {
+    margin-top: 20px;
+    padding: 20px;
+	width: 55%;
+	font-size: 20px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section2 {
+    margin-left: 5%;
+    border-radius:  10px;
+    width: 90%; 
+    margin-top: 30px;
+    background-color: #3a293814;
+    text-align: left;
+}
+
+.section2 ul {
+    list-style: none;
+}
+
+.section2 ul li {
+    border-bottom: 1px solid #fff;
+}
+
+.section2 small {
+    color: blue;
+}
+
+.section3 {
+    margin: 50px auto;
+}
+
+.section3 button {
+    padding: 10px;
+	font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 500px;
+    margin: 10px 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.section3 button:hover {
+    background-color: #392837;
+    color: white;
+}
+
+.stateClick form {
+    display: inline-block;
+    margin-right: 10px; /* Optional: Add margin between buttons */
+}
+
+/* mobile view */
+.sectionMob1 img {
+    max-height: 45%;
+    height: 30%;
+    width: 100%;
+}
+
+.logoImg {
+	width: 50px;
+	height: 50px;
+}
+
+.vechicalBoxMob {
+    background-color: #fff;
+    z-index: 10000;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.vehicalContentMob {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    font-size: 25px;
+	color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.vehicalContentMob p {
+    font-size: 20px;
+}
+
+.vechicalBoxMob h1 {
+	font-size: 50px;
+	text-align: left;
+}
+
+.vechicalBoxMob h2 {
+	color: black;
+    font-size: 30px;
+}
+
+.vechicalBoxMob input {
+    padding: 20px;
+	width: 80%;
+	font-size: 25px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.vechicalBoxMob button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+	width: 70%;
+	font-size: 30px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.min-wth {
+    margin: 10px 10px !important;
+    min-width: 330px;
+    max-width: 330px;
+    font-size: 12px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.sectionMob2 {
+    margin-left: 5%;
+    border-radius:  10px;
+    width: 90%; 
+    margin-top: 30px;
+    font-size: 12px;
+    background-color: #3a293814;
+    text-align: left;
+}
+
+.sectionMob2 ul {
+    padding: 12px 35px;
+    list-style: none;
+}
+
+.sectionMob2 ul li {
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+}
+
+.sectionMob2 small {
+    color: blue;
+}
+
+.sectionMob3 {
+    margin: 50px auto;
+}
+
+.sectionMob3 h1 {
+    font-size: 40px;
+}
+
+.sectionMob3 button {
+    padding: 10px;
+	font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px 50px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.min-wth-800 {
+    font-size: 30px !important;
+    min-width: 800px;
+}
+
+.sectionMob3 button:hover {
+    background-color: #392837;
+    color: white;
+}
+
+.sectionMob3 button:hover a {
+    color: white;
+}
+
+.section3 button:hover {
+    background-color: #392837;
+    color: white;
+}
+
+.section3 button:hover a {
+    color: white;
+}
+
+
+
+
+.stateClick a {
+    display: inline-block;
+    margin-right: 10px; /* Optional: Add margin between buttons */
+    color: black;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.ft-w-normal {
+    font-weight: normal;
+}
+
+.rtoDetails {
+    font-size: 15px;
+    display: inline-block;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.account a {
+    padding: 0 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff !important;
+}
+.navbar-nav .nav-link {
+    padding-right: 20px;
+}
+
+.dropdown-menu {
+    background-color: #392837;
+    z-index: 1000; 
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #392837 !important;
+}
