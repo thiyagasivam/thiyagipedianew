@@ -15,7 +15,7 @@
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- CSS -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
